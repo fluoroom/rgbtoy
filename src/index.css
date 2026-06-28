@@ -280,6 +280,39 @@ body {
   background: var(--surface);
 }
 
+/* ── Mode toggle ── */
+
+.mode-toggle {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.mode-btn {
+  flex: 1;
+  padding: 10px;
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.12s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mode-btn.active {
+  background: var(--surface);
+  color: var(--text);
+  border-color: #555;
+}
+
+.mode-btn:hover:not(.active) {
+  border-color: #444;
+  color: var(--text);
+}
+
 /* ── Misc ── */
 
 .section-divider {
